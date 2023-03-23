@@ -1,6 +1,6 @@
 # vk-try
 
-## Pokemon image classification task
+## Pokemon image generation task
 
 Dataset: https://www.kaggle.com/datasets/hlrhegemony/pokemon-image-dataset
 
