@@ -1,20 +1,31 @@
-# vk-try
+# pokemon-generation
 
-## Pokemon image generation task
+Task: pokemon __image generation__
 
 Dataset: https://www.kaggle.com/datasets/hlrhegemony/pokemon-image-dataset
 
-Augmentations: Resize to 64x64, random horizontal flip, color jitter
+Augmentations: 
 
-Trained 1000 epochs batch_size=128 using Adam: LR = 0.0002 BETA = (0.5,0.999)
+- Resize to 64x64,
+- Random horizontal flip
+- Color jitter
 
-Models: DCGAN, WGAN-GP
+Training:
 
-Best model: [DCGAN](https://github.com/searayeah/vk-try/blob/main/DCGAN%20real%20label%20smoothing.ipynb) with tweaks from https://github.com/soumith/ganhacks:
+- 1000 epochs
+- batch_size=128
+- Adam: LR = 0.0002 BETA = (0.5, 0.999)
+
+Models: 
+
+- DCGAN
+- WGAN-GP
+
+Best model: [DCGAN](https://github.com/searayeah/pokemon-generation/blob/main/DCGAN%20real%20label%20smoothing.ipynb) with tweaks from https://github.com/soumith/ganhacks:
+
 - A modified loss function (for G min (log 1-D) --> max log D)
 - Label smoothing
 - Adding noise to inputs
 
 Result:
 ![image](https://user-images.githubusercontent.com/57370975/227232357-c3a40efe-af1f-4aa5-ab9a-e9ad8e215b70.png)
-
