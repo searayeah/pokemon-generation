@@ -26,6 +26,7 @@ Best model: [DCGAN](https://github.com/searayeah/pokemon-generation/blob/main/DC
 - A modified loss function (for G min (log 1-D) --> max log D)
 - Label smoothing
 - Adding noise to inputs
+- LeakyReLU insead of ReLU
 
 Result:
 ![image](https://user-images.githubusercontent.com/57370975/227232357-c3a40efe-af1f-4aa5-ab9a-e9ad8e215b70.png)
