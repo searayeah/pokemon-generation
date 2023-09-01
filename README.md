@@ -21,7 +21,7 @@ Models:
 - DCGAN
 - WGAN-GP
 
-Best model: [DCGAN](https://github.com/searayeah/pokemon-generation/blob/main/DCGAN%20real%20label%20smoothing.ipynb) with tweaks from https://github.com/soumith/ganhacks:
+Best model: [DCGAN](https://github.com/searayeah/pokemon-generation/blob/main/DCGAN-final.ipynb) with tweaks from https://github.com/soumith/ganhacks:
 
 - A modified loss function (for G min (log 1-D) --> max log D)
 - Label smoothing
